@@ -26,7 +26,7 @@ class UserBuilder {
 
     // 最後に完成品の User クラスを生成するビルドメソッド
     public function Build(): User {
-        return new User($this);
+        return new User(clone $this);
     }
 }
 
